@@ -29,12 +29,6 @@ WorldVLA is an autoregressive action world model that unifies action and image u
 ### Action Model Results (Text + Image -> Action)
 Action Model generates actions given the text instruction and image observations.
 
-|         |         |         |  
-| :-----: | :-----: | :-----: |  
-| ![Open drawer](worldvla/assets/action_model_open_the_middle_drawer_of_the_cabinet.gif) | ![Pick up soup](worldvla/assets/action_model_pick_up_the_alphabet_soup_and_place_it_in_the_bask.gif) | ![Pick up bowl](worldvla/assets/action_model_pick_up_the_black_bowl_between_the_plate_and_the_r.gif) |
-| Input: Open the middle drawer of the cabinet. | Input: Pick up the alphabet soup and place it in the basket. | Input: Pick up the black bowl between the plate and the ramekin and place it on the plate. |
-<br>
-
 <table>
   <tr>
     <td width="300">
@@ -53,15 +47,36 @@ Action Model generates actions given the text instruction and image observations
     <td><center>Input: Pick up the black bowl between the plate and the ramekin and place it on the plate.</center></td>
   </tr>
 </table>
-
+<br>
 
 ### World Model Results (Action + Image -> Image)
 World Model generates the next frame given the current frame and action control.
 
-|         |         |         |  
-| :-----: | :-----: | :-----: |  
-| ![Open drawer](worldvla/assets/world_model_open_the_top_drawer_and_put_the_bowl_inside.gif) | ![Pick up soup](worldvla/assets/world_model_push_the_plate_to_the_front_of_the_stove.gif) | ![Pick up bowl](worldvla/assets/world_model_put_the_bowl_on_the_stove.gif) |
-| Input: Action sequence of "Open the top drawer and put the bowl inside". | Input: Action sequence of "Push the plate to the front of the stove". | Input: Action sequence of "Put the bowl on the stove". |
+<table>
+  <tr>
+    <td width="300" align="center">
+      <img src="worldvla/assets/world_model_open_the_top_drawer_and_put_the_bowl_inside.gif" width="100%">
+    </td>
+    <td width="300" align="center">
+      <img src="worldvla/assets/world_model_push_the_plate_to_the_front_of_the_stove.gif" width="100%">
+    </td>
+    <td width="300" align="center">
+      <img src="worldvla/assets/world_model_put_the_bowl_on_the_stove.gif" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      Input: Action sequence of "Open the top drawer and put the bowl inside".
+    </td>
+    <td align="center">
+      Input: Action sequence of "Push the plate to the front of the stove".
+    </td>
+    <td align="center">
+      Input: Action sequence of "Put the bowl on the stove".
+    </td>
+  </tr>
+</table>
+
 <br>
 
 ## 🛠️ Requirements and Installation
