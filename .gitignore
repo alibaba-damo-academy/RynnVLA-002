@@ -1,0 +1,9 @@
+worldvla/ckpts/
+__pycache__
+worldvla/processed_data/
+worldvla/xllmx_data_cache/
+xllmx.egg-info/
+output_libero_256/
+output_libero_512/
+LIBERO-master/
+xllmx_data_cache/
