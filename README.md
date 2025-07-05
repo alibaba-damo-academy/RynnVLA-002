@@ -200,7 +200,10 @@ python concate_action_world_model_data.py --task goal --resolution 256
 ### Step 2: Prepare data configs
 Set the correct data path in the config files in `worldvla/configs/libero_256_all`, `worldvla/exps_512_all`.
 
-### Step 3: Start training
+### Step 3: Download the Chameleon weights
+Download the Chameleon [tokenizer](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/chameleon/tokenizer) and [starting point](https://huggingface.co/Alibaba-DAMO-Academy/WorldVLA/tree/main/chameleon/starting_point) weights, put them under the `worldvla/ckpts/chameleon/tokenizer` and `worldvla/ckpts/starting_point`.
+
+### Step 4: Start training
 Now you can start training with your training scripts:
 ```bash
 # Libero goal, 256 resolution
