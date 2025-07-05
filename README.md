@@ -237,10 +237,10 @@ All assets and code are under the [Apache 2.0 license](./LICENSE) unless specifi
 ## Citation <a name="citation"></a>
 If you find the project helpful for your research, please consider citing our paper:
 ```bibtex
-@article{cen2025WorldVLA,
+@article{cen2025worldvla,
   title={WorldVLA: Towards Autoregressive Action World Model},
-  author={Cen, Jun and Yu, Chaohui and Yuan, Hangjie and Jiang, Yuming and Huang, Siteng and Guo, Jiayan and Li, Xin and Song, Yibing and Luo, Hao and Wang, Fan and Zhao, Deli and Chen, Hao},
-  journal={arXiv preprint arXiv:},
+  author={Cen, Jun and Yu, Chaohui and Yuan, Hangjie and Jiang, Yuming and Huang, Siteng and Guo, Jiayan and Li, Xin and Song, Yibing and Luo, Hao and Wang, Fan and others},
+  journal={arXiv preprint arXiv:2506.21539},
   year={2025}
 }
 ```
