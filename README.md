@@ -111,7 +111,7 @@ Download the Chameleon [tokenizer](https://huggingface.co/Alibaba-DAMO-Academy/W
 
 We evaluate four tasks of the LIBERO benchmark, including [spatial, obejct, goal, 10], and 2 image resolutions, including [256, 512]. Here we take LIEBRO goal and 256 resolution as an example.
 
-First, filter the no-operation actions like [OpenVLA](https://github.com/openvla/openvla).
+First, download the [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO?tab=readme-ov-file#datasets) dataset and filter the no-operation actions like [OpenVLA](https://github.com/openvla/openvla).
 ```
 cd worldvla/libero_util
 python regenerate_libero_dataset_filter_no_op.py \
