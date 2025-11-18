@@ -6,6 +6,7 @@ dist
 
 # ckpt
 rynnvla-002/ckpts/
+rynnvla-002/output/
 
 # data
 rynnvla-002/processed_data/
@@ -19,3 +20,4 @@ rynnvla-002/processed_data/
 3rd_parties
 
 rynnvla-002/LIBERO-master/
+rynnvla-002/eval_outputs/

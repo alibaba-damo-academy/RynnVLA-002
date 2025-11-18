@@ -19,7 +19,7 @@ RynnVLA-002: A Unified Vision-Language-Action and World Model</a></h3>
 
 
 ## 🌟 Introduction
-WorldVLA is an autoregressive action world model that unifies action and image understanding and generation. WorldVLA intergrates Vision-Language-Action (VLA) model (action model) and world model in one single framework.
+RynnVLA-002 is an autoregressive action world model that unifies action and image understanding and generation. RynnVLA-002 intergrates Vision-Language-Action (VLA) model (action model) and world model in one single framework.
 
 <div style="text-align: center;">
   <img src="rynnvla-002/assets/overview.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
@@ -182,18 +182,15 @@ python pretoken_world_model.py --task goal --resolution 256 --img_name imgs_thir
 bash concate_record_libero.sh
 ```
 
-### Step 2: Prepare data configs
-Set the correct data path in the config files in `rynnvla-002/configs/libero_256_all`, `rynnvla-002/exps_512_all`.
+#### Step 2: Prepare data configs
+Set the correct data path in the config files in `rynnvla-002/configs/libero_goal/his_2_third_view_wrist_w_state_5_256_pretokenize.yaml`.
 
-### Step 3: Start training
+#### Step 3: Start training
 Now you can start training with your training scripts:
 ```bash
 # Libero goal, 256 resolution
-cd rynnvla-002/exps_256_all
-bash 7B_ts_his_2_img_only_goal_ck_5_1a2i_all.sh
-# Libero goal, 512 resolution
-cd rynnvla-002/exps_512_all
-bash 7B_ts_his_2_img_only_goal_ck_5_1a2i_all.sh
+cd rynnvla-002/exps_256/pretokenize
+bash libero_goal_his_2_third_view_wrist_w_state_5_256_abiw.sh
 ```
 
 
@@ -203,7 +200,7 @@ bash 7B_ts_his_2_img_only_goal_ck_5_1a2i_all.sh
 #### Step 1: Prepare data configs
 Set the correct data path in the config files in `rynnvla-002/configs/libero_goal/his_2_third_view_wrist_w_state_5_256_nopretokenize.yaml`.
 
-### Step 2: Start training
+#### Step 2: Start training
 ```bash
 # Libero goal, 256 resolution
 cd rynnvla-002/exps_256/nopretokenize
@@ -213,24 +210,19 @@ bash libero_goal_his_2_third_view_wrist_w_state_5_256_abiw.sh
 
 ## ✅ Evaluation
 ### Step 1: Prepare evaluation scripts
-Set the `--resume_path` in `rynnvla-002/exps_256_all/eval_libero_7B_2_action_all_epochs_img_only_ck_5_1a2i_goal.sh` to the model path. You can download our trained in Model Zoo or train yourself.
+Set the `checkpoint_path` in the bash files in `rynnvla-002/exps_256/eval/` to the model path. You can download our trained in Model Zoo or train yourself.
 
 ### Step 2: Start evaluation
 ```bash
-# Libero goal, 256 resolution
+# Libero goal, 256 resolution, continous
 cd rynnvla-002/exps_256/eval
-bash eval_libero_7B_2_action_all_epochs_img_only_ck_5_1a2i_goal.sh
-# Libero goal, 512 resolution
-cd rynnvla-002/exps_512_all
-bash eval_libero_7B_2_action_all_epochs_img_only_ck_5_1a2i_goal.sh
+bash eval_libero_goal_his_2_third_view_wrist_w_state_5_256_abiw_continous.sh
+# Libero goal, 256 resolution, discrete
+cd rynnvla-002/exps_256/eval
+bash eval_libero_goal_his_2_third_view_wrist_w_state_5_256_abiw_discrete.sh
 ```
 
 
-
-## 📆 TODO <a name="todos"></a>
-- [x] Release the code of action model on LIBERO benchmark.
-- [ ] Release the code of world model on LIBERO dataset.
-- [ ] Release the code of real-world expriment.
 
 ## License <a name="license"></a>
 
