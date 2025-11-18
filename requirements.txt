@@ -1,0 +1,306 @@
+absl-py==2.1.0
+accelerate==0.33.0
+addict==2.4.0
+aiofiles==23.2.1
+aiohttp==3.9.1
+aiosignal==1.3.1
+alibabacloud-credentials==0.3.2
+alibabacloud-endpoint-util==0.0.3
+alibabacloud-gateway-spi==0.0.1
+alibabacloud-openapi-util==0.2.2
+alibabacloud-pai-dlc20201203 @ https://sdk-portal-us-prod.oss-accelerate.aliyuncs.com/downloads/u-592c58c5-0448-4bb6-9482-6d1af36f71c9-python-pai-dlc.zip#sha256=d857dd623fa7c4037fcfd70c3a03a4d0bf08c23a049bf4f03f87ce62b86ce9d1
+alibabacloud-paistudio20220112==1.1.2
+alibabacloud-tea==0.3.5
+alibabacloud-tea-openapi==0.3.8
+alibabacloud-tea-util==0.3.11
+alibabacloud-tea-xml==0.0.2
+alipai==0.1.7
+aliyun-log-python-sdk==0.8.15
+aliyun-python-sdk-core==2.14.0
+aliyun-python-sdk-kms==2.16.2
+aliyun-python-sdk-sts==3.1.2
+altair==5.4.1
+annotated-types==0.7.0
+anyio==4.4.0
+astor==0.8.1
+astroid==3.0.2
+asttokens==2.4.1
+attrs==23.1.0
+autopep8==1.7.0
+bddl==3.5.0
+bitsandbytes==0.43.0
+boltons @ file:///work/ci_py311/boltons_1677685195580/work
+brotlipy==0.7.0
+cachetools==5.3.2
+certifi @ file:///croot/certifi_1700501669400/work/certifi
+cffi @ file:///work/ci_py311/cffi_1676822533496/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+click==8.1.7
+cloudpickle==3.0.0
+colorama==0.4.6
+comm==0.2.1
+common-io @ file:///tmp/common_io-0.4.0%2Btunnel-py2.py3-none-any.whl#sha256=551d101b7fde1bf9a5bba7c73b87198342fa8336cfd0405caacbaf9911d0ef7a
+conda @ file:///croot/conda_1696257509808/work
+conda-content-trust @ file:///croot/conda-content-trust_1693490622020/work
+conda-libmamba-solver @ file:///croot/conda-libmamba-solver_1696257536937/work/src
+conda-package-handling @ file:///croot/conda-package-handling_1690999929514/work
+conda_package_streaming @ file:///croot/conda-package-streaming_1690987966409/work
+configparser==6.0.0
+contextlib2==21.6.0
+contourpy==1.2.0
+crcmod==1.7
+cryptography==37.0.4
+cvxopt==1.3.2
+cycler==0.12.1
+Cython @ file:///croot/cython_1702999162981/work
+datasets==2.21.0
+dateparser==1.2.0
+debugpy==1.8.0
+decorator==4.4.2
+decord==0.6.0
+deepspeed==0.13.1
+diffusers==0.25.1
+dill==0.3.7
+distro==1.9.0
+dnspython==2.4.2
+docker-pycreds==0.4.0
+docstring-parser==0.15
+eas-prediction==0.12
+easy-rec @ https://easyrec.oss-cn-beijing.aliyuncs.com/releases/easy_rec-0.1.6-py2.py3-none-any.whl#sha256=24baedf64f97bf839453fbca91ee73dd0f5be47764bace262ed7dfd6263244f1
+easydict==1.13
+einops==0.6.1
+einops-exts==0.0.4
+elastic-transport==8.11.0
+elasticsearch==8.11.1
+etils==1.13.0
+evaluate==0.4.1
+executing==2.0.1
+fairscale==0.4.13
+fastapi==0.112.2
+fastjsonschema==2.21.2
+ffmpy==0.4.0
+filelock==3.13.1
+flake8==7.0.0
+flash-attn==2.5.8
+fonttools==4.47.0
+frozenlist==1.4.1
+fsspec==2023.10.0
+ftfy==6.1.3
+future==0.18.3
+gast==0.5.4
+gitdb==4.0.11
+GitPython==3.1.43
+glfw==2.10.0
+gradio==3.50.0
+gradio_client==0.6.1
+graphviz==0.20.1
+grpcio==1.66.1
+gym==0.26.2
+gym-notices==0.1.0
+h11==0.14.0
+h5py==3.14.0
+hf-xet==1.2.0
+hjson==3.1.0
+httpcore==0.17.3
+httptools==0.6.4
+httpx==0.24.1
+huggingface-hub==0.23.4
+hyperopt==0.1.2
+idna @ file:///work/ci_py311/idna_1676822698822/work
+imageio==2.34.0
+imageio-ffmpeg==0.4.9
+importlib-metadata==7.0.1
+importlib_resources==6.4.4
+iniconfig==2.1.0
+ipykernel==6.28.0
+ipython==8.20.0
+ipywidgets==8.1.1
+isort==5.13.2
+jedi==0.19.1
+Jinja2==3.1.2
+jiter==0.5.0
+jmespath==0.10.0
+joblib==1.3.2
+json-tricks==3.17.3
+jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
+jsonpointer==2.1
+jsonschema==4.23.0
+jsonschema-specifications==2023.12.1
+jupyter_client==8.6.0
+jupyter_core==5.7.1
+jupyterlab-widgets==3.0.9
+jupytext==1.17.3
+kiwisolver==1.4.5
+latex2mathml==3.77.0
+lazy-object-proxy==1.6.0
+Levenshtein==0.25.1
+# Editable install with no version control (libero==0.1.0)
+-e /mnt/damorobot/cenjun/WorldVLA_damorobot/woldvla/LIBERO-master
+libmambapy @ file:///croot/mamba-split_1694187754698/work/libmambapy
+llvmlite==0.45.0
+lpips==0.1.4
+Markdown==3.7
+markdown-it-py==3.0.0
+markdown2==2.5.0
+MarkupSafe==2.1.3
+matplotlib==3.8.2
+matplotlib-inline==0.1.6
+mccabe==0.7.0
+mdit-py-plugins==0.5.0
+mdurl==0.1.2
+modelscope==1.11.0
+moviepy==1.0.3
+mpmath==1.3.0
+mujoco==3.3.6
+multidict==6.0.4
+multiprocess==0.70.15
+narwhals==1.6.0
+nbformat==5.10.4
+nest-asyncio==1.5.9
+networkx==3.2.1
+ninja==1.11.1.1
+nltk==3.9.1
+numba==0.62.0
+numpy==1.24.4
+nvidia-cublas-cu12==12.4.5.8
+nvidia-cuda-cupti-cu12==12.1.105
+nvidia-cuda-nvrtc-cu12==12.1.105
+nvidia-cuda-runtime-cu12==12.1.105
+nvidia-cudnn-cu12==8.9.2.26
+nvidia-cufft-cu12==11.0.2.54
+nvidia-curand-cu12==10.3.2.106
+nvidia-cusolver-cu12==11.4.5.107
+nvidia-cusparse-cu12==12.1.0.106
+nvidia-nccl-cu12==2.19.3
+nvidia-nvjitlink-cu12==12.6.68
+nvidia-nvtx-cu12==12.1.105
+openai==1.43.0
+opencv-contrib-python==4.6.0.66
+opencv-python==4.6.0.66
+opt-einsum==3.3.0
+orjson==3.10.7
+oss2==2.18.3
+packaging @ file:///croot/packaging_1693575174725/work
+pai-nni @ http://odps-release.cn-hangzhou.oss.aliyun-inc.com/pai/pypi/pai_nni/3.x/pai_nni-2.6-py3-none-manylinux1_x86_64.whl#sha256=1fab4ac953bda4f78d72aed388cfe3b5b00b61412f75d5f4ff0d1ab41999a199
+pandas==2.1.4
+parso==0.8.3
+patsy==0.5.5
+peft==0.4.0
+pexpect==4.9.0
+pillow==10.2.0
+piqa==1.3.2
+platformdirs==4.1.0
+plotly==5.18.0
+pluggy==1.6.0
+prettytable==3.9.0
+proglog==0.1.10
+prompt-toolkit==3.0.43
+protobuf==3.20.3
+psutil==5.9.7
+ptyprocess==0.7.0
+pure-eval==0.2.2
+py-cpuinfo==9.0.0
+pyarrow==17.0.0
+pyarrow-hotfix==0.6
+pybind11 @ file:///croot/pybind11-split_1682965519881/work
+pybind11-global @ file:///croot/pybind11-split_1682965519881/work
+pycodestyle==2.11.1
+pycosat @ file:///croot/pycosat_1696536503704/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pycryptodome==3.19.0
+pydantic==2.8.2
+pydantic_core==2.20.1
+pydub==0.25.1
+pyflakes==3.2.0
+Pygments==2.17.2
+pylint==3.0.3
+pymongo==4.6.1
+pynvml==11.5.3
+pyodps==0.11.4.1
+PyOpenGL==3.1.10
+pyOpenSSL @ file:///croot/pyopenssl_1690223430423/work
+pyparsing==3.1.1
+PySocks @ file:///work/ci_py311/pysocks_1676822712504/work
+pysubs2==1.7.3
+pytest==8.4.2
+python-dateutil==2.8.2
+python-multipart==0.0.9
+PythonWebHDFS==0.2.3
+pytz==2023.3.post1
+PyYAML==6.0.1
+pyzmq==25.1.2
+rapidfuzz==3.9.6
+referencing==0.35.1
+regex==2023.12.25
+requests==2.32.3
+responses==0.18.0
+rich==13.7.0
+robosuite==1.4.0
+rpds-py==0.20.0
+ruamel.yaml @ file:///work/ci_py311/ruamel.yaml_1676838772170/work
+safetensors==0.4.2
+scenedetect==0.6.3
+schema==0.7.5
+scikit-learn==1.2.2
+scipy==1.11.4
+seaborn==0.13.0
+semantic-version==2.10.0
+sentencepiece==0.1.99
+sentry-sdk==2.13.0
+setproctitle==1.3.3
+shortuuid==1.0.13
+shtab==1.6.5
+simplejson==3.19.2
+six==1.16.0
+smmap==5.0.1
+sniffio==1.3.1
+sortedcontainers==2.4.0
+stack-data==0.6.3
+starlette==0.38.4
+statsmodels==0.14.1
+svgwrite==1.4.3
+sympy==1.12
+tabulate==0.9.0
+tenacity==8.2.3
+tensorboard==2.17.1
+tensorboard-data-server==0.7.2
+termcolor==2.5.0
+terminado==0.8.3
+threadpoolctl==3.2.0
+timm==1.0.3
+tokenizers==0.19.1
+toml==0.10.2
+tomli==2.0.1
+tomlkit==0.12.3
+torch==2.2.0+cu121
+torchdiffeq==0.2.3
+torchvision==0.17.0+cu121
+tornado==6.4
+tqdm==4.66.5
+training-utils @ https://pai-sdk.oss-cn-shanghai.aliyuncs.com/training_utils/dist/training_utils-1.0.6-py3-none-any.whl#sha256=a51b2a28d1b42b6fc60968bae0f6761c379774ee7ebe4d0def1f5fd80866800c
+traitlets==5.14.1
+transformers==4.43.0
+triton==2.2.0
+trl==0.7.10
+truststore @ file:///croot/truststore_1695244293384/work
+typing_extensions==4.12.2
+tyro==0.7.0
+tzdata==2023.3
+tzlocal==5.2
+urllib3 @ file:///croot/urllib3_1686163155763/work
+uvicorn==0.30.6
+wandb==0.17.8
+wavedrom==2.0.3.post3
+wcwidth==0.2.13
+websockets==11.0.3
+Werkzeug==3.0.4
+widgetsnbextension==4.0.9
+xgboost==2.0.3
+# Editable Git install with no remote (xllmx==0.0.1)
+-e /public/hz_oss/cenjun/WorldVLA
+xlrd==2.0.1
+xxhash==3.4.1
+yapf==0.40.2
+yarl==1.9.4
+zipp==3.17.0
+zstandard @ file:///work/ci_py311_2/zstandard_1679339489613/work

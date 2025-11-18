@@ -1,0 +1,74 @@
+{
+    "rel_min_action": [
+        -2.197265625,
+        -3.076171875,
+        -5.625,
+        -2.98828125,
+        -2.900390625,
+        -1.0612244606018066
+    ],
+    "rel_max_action": [
+        2.197265625,
+        5.361328125,
+        3.515625,
+        2.900390625,
+        2.98828125,
+        45.387752532958984
+    ],
+    "rel_mean_action": [
+        -0.005887026432901621,
+        0.11748834699392319,
+        -0.13238531351089478,
+        -0.03696800395846367,
+        0.0016337073175236583,
+        8.174477577209473
+    ],
+    "rel_std_action": [
+        0.7413123250007629,
+        1.409432053565979,
+        1.6263924837112427,
+        1.0492033958435059,
+        1.0317118167877197,
+        13.488285064697266
+    ],
+    "mean_state": [
+        6.418105125427246,
+        109.62456512451172,
+        96.21977996826172,
+        72.66444396972656,
+        -8.627388000488281,
+        10.489294052124023
+    ],
+    "std_state": [
+        17.71915054321289,
+        34.55397415161133,
+        36.96105194091797,
+        21.199018478393555,
+        33.87517547607422,
+        11.994536399841309
+    ],
+    "task_data": {
+        "place_roll_new": {
+            "instructions": [
+                "Place the block inside the circle."
+            ],
+            "data_path": [
+                "/mnt/PLNAS/cenjun/all_data/yumingj/data/LeRobot_data_hdf5/hdf5/standard_desktop_data/data_0616/laptop_03/so100_Pick-up-all-the-blocks-one-by-one-with-tweezers-and-put-them-in-the-roll/episode_000000.hdf5",
+                "/mnt/PLNAS/cenjun/all_data/yumingj/data/LeRobot_data_hdf5/hdf5/standard_desktop_data/data_0616/laptop_03/so100_Pick-up-all-the-blocks-one-by-one-with-tweezers-and-put-them-in-the-roll-1/episode_000000.hdf5",
+                "/mnt/PLNAS/cenjun/all_data/yumingj/data/LeRobot_data_hdf5/hdf5/standard_desktop_data/data_0616/laptop_03/so100_Pick-up-all-the-blocks-one-by-one-with-tweezers-and-put-them-in-the-roll-2/episode_000001.hdf5",
+                "/mnt/PLNAS/cenjun/all_data/yumingj/data/my_lerobot_test_data/hdf5/standard_desktop_data/data_0625/laptop_03/grab_blocks/so100_Pick-up-all-the-blocks-one-by-one-with-tweezers-and-put-them-in-the-roll/episode_000000.hdf5"
+            ]
+        },
+        "strawberry_pickup": {
+            "instructions": [
+                "Place the strawberries from the table into the cup."
+            ],
+            "data_path": [
+                "/mnt/PLNAS/cenjun/all_data/yumingj/data/my_lerobot_test_data/hdf5/standard_desktop_data/data_0616/laptop_03/so100_Pick-up-the-strawberries-and-put-them-in-the-cup/episode_000000.hdf5",
+                "/mnt/PLNAS/cenjun/all_data/yumingj/data/my_lerobot_test_data/hdf5/standard_desktop_data/data_0625/laptop_03/grab_strawberries/so100_Pick-up-the-strawberries-and-put-them-in-the-cup/episode_000000.hdf5",
+                "/mnt/PLNAS/cenjun/all_data/yumingj/data/my_lerobot_test_data/hdf5/standard_desktop_data/data_0625/pc_02/grab_strawberries/so100_Pick-up-the-strawberries-and-put-them-in-the-cup/episode_000000.hdf5",
+                "/mnt/PLNAS/cenjun/all_data/yumingj/data/my_lerobot_test_data/hdf5/standard_desktop_data/data_0625/pc_03/grab_strawberries/so100_Pick-up-the-strawberries-and-put-them-in-the-cap/episode_000000.hdf5"
+            ]
+        }
+    }
+}

@@ -1,0 +1,9 @@
+META:
+  split: all
+  libero_task_suite: libero_object
+  raw_data_dir: '../processed_data/libero_object_no_noops_t_512'
+action_model:
+  len_action: 5
+  his: 2
+world_model:
+  his: 1

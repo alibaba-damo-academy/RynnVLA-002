@@ -1,0 +1,21 @@
+# Python
+__pycache__
+*.pyc
+*.egg-info
+dist
+
+# ckpt
+rynnvla-002/ckpts/
+
+# data
+rynnvla-002/processed_data/
+
+# jupyter
+.ipynb_checkpoints
+
+
+# Other
+.DS_Store
+3rd_parties
+
+rynnvla-002/LIBERO-master/
