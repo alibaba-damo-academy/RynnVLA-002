@@ -93,6 +93,17 @@ After filtering, you can choose between the `Pretokenize` or `NoPretokenize` tra
 
 
 ### Pipeline1: Pretokenize
+
+#### Step 0: Lerobot to HDF5
+
+We use HDF5 format data. Therefore, if you collect data in Lerobot format, you can follow the following command to process it into HDF5 format:
+```
+cd rynnvla-002/libero_util
+python lerobot_to_hdf5.py \
+    --lerobot_input_dir {lerobot_input_dir}
+    --hdf5_output_dir {hdf5_output_dir}
+```
+
 #### Step 1: Libero Data Preparation
 
 After filtering out no-operation actions, save all images and actions.
