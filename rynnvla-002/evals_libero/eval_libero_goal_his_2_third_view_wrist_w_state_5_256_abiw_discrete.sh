@@ -19,9 +19,10 @@ task_suite=libero_goal
 exp_name=his_2_third_view_wrist_w_state_5_256_abiw
 his_setting=his_2_third_view_wrist_w_state
 eval_setting=discrete
-checkpoint_path=/mnt/damorobot/cenjun/libero_outputs/"$task_suite"/"$exp_name"/"epoch$epoch_num"
+checkpoint_path=../outputs/"$task_suite"/"$exp_name"/"epoch$epoch_num"
 
-base_output_dir=/mnt/damorobot/cenjun/libero_evals/"$task_suite"/"$exp_name"/"epoch_$epoch_num"/"$eval_setting"
+base_output_dir=../eval_outputs/"$task_suite"/"$exp_name"/"epoch_$epoch_num"/"$eval_setting"
+
 mkdir -p "$base_output_dir"
 
 torchrun --nnodes=1 --nproc_per_node=1 --master_port=$((29550)) ../eval_solver_libero_discrete_w_state.py \
