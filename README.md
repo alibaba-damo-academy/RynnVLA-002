@@ -80,7 +80,7 @@ We offer two types of training pipelines:
 
 Both pipelines begin by filtering out no-operation actions like [OpenVLA](https://github.com/openvla/openvla).
 
-```
+```bash
 cd rynnvla-002/libero_util
 python regenerate_libero_dataset_filter_no_op.py \
     --libero_task_suite libero_goal \
@@ -96,7 +96,7 @@ After filtering, you can choose between the `Pretokenize` or `NoPretokenize` tra
 #### Step 1: Libero Data Preparation
 
 After filtering out no-operation actions, save all images and actions.
-```
+```bash
 python regenerate_libero_dataset_save_img_action_state_wrist.py \
     --libero_task_suite libero_goal \
     --image_resolution 256 \
@@ -156,7 +156,7 @@ The world model conversations are in the following format:
 },
 ```
 To validate the world model performance, we split all the libero dataset into train/val_ind/val_ood json files.
-```
+```bash
 cd rynnvla-002/data
 python action_state_model_conv_generation.py \
     --base_dir ../processed_data/libero_goal_image_state_action_t_256 \
@@ -175,7 +175,7 @@ python world_model_bi_views_conv_generation.py \
     --output_dir ../processed_data/convs
 ```
 Finally, tokenize all the conversations into tokens and save them.
-```
+```bash
 cd rynnvla-002/data
 python pretoken_state_action_model.py --task goal --resolution 256 --with_state --img_names imgs_third_view imgs_wrist --his 2 --len_action 5 --tokenizer_path Alpha-VLLM/Lumina-mGPT-7B-768
 python pretoken_world_model.py --task goal --resolution 256 --img_name imgs_third_view imgs_wrist --tokenizer_path Alpha-VLLM/Lumina-mGPT-7B-768
