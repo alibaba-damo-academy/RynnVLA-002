@@ -14,19 +14,27 @@ RynnVLA-002: A Unified Vision-Language-Action and World Model</a></h3>
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](./LICENSE) 
 </h5>
 
+<video controls width="100%">
+    <source src="rynnvla-002/assets/demo_multi_ann_crf_2.mp4" type="video/mp4">
+    你的浏览器不支持HTML5视频标签。
+</video>
+
+
 ## 📰 News
 
+* **[2025.11.10]**  Upgrade WorldVLA to RynnVLA-002. Release models, training code and evaluation code on LIBERO simulation benchmark and real-world LeRobot experiments.
+* **[2025.06.23]**  Release models, training code and evaluation code on LIBERO action generation benchmark of WorldVLA.
 
 
 ## 🌟 Introduction
-RynnVLA-002 is an autoregressive action world model that unifies action and image understanding and generation. RynnVLA-002 intergrates Vision-Language-Action (VLA) model (action model) and world model in one single framework.
+RynnVLA-002 is an autoregressive action world model that unifies action and image understanding and generation. RynnVLA-002 intergrates Vision-Language-Action (VLA) model (action model) and world model in one single framework. Compared to WorldVLA, RynnVLA-002 adds a continous Action Transformer, wrist camera input and generation, and state input. RynnVLA-002 achieves 97.4% success rate on LIBERO benchmark.
 
 <div style="text-align: center;">
   <img src="rynnvla-002/assets/overview.png" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
 </div>
 <br>
 
-### Action Model Results (Text + Image -> Action)
+### VLA Model Results (Text + Image -> Action)
 Action Model generates actions given the text instruction and image observations.
 
 |         |         |         |  
@@ -40,8 +48,9 @@ World Model generates the next frame given the current frame and action control.
 
 |         |         |         |  
 | :-----: | :-----: | :-----: |  
-| ![Open drawer](rynnvla-002/assets/world_model_open_the_top_drawer_and_put_the_bowl_inside.gif) | ![Pick up soup](rynnvla-002/assets/world_model_push_the_plate_to_the_front_of_the_stove.gif) | ![Pick up bowl](rynnvla-002/assets/world_model_put_the_bowl_on_the_stove.gif) |
-| Input: Action sequence of "Open the top drawer and put the bowl inside". | Input: Action sequence of "Push the plate to the front of the stove". | Input: Action sequence of "Put the bowl on the stove". |
+| ![Open drawer](rynnvla-002/assets/pickuptheblackbowlandplaceitontheplate_front.gif) | ![Pick up soup](rynnvla-002/assets/put_the_cream_cheese_box_in_the_basket_front.gif) | ![Pick up bowl](rynnvla-002/assets/putthebowlontopofthecabinet_front.gif) |
+| ![Open drawer](rynnvla-002/assets/pickuptheblackbowlandplaceitontheplate_wrist.gif) | ![Pick up soup](rynnvla-002/assets/put_the_cream_cheese_box_in_the_basket_wrist.gif) | ![Pick up bowl](rynnvla-002/assets/putthebowlontopofthecabinet_wrist.gif) |
+| Input: Action sequence of "Pick up the black bowl and place it on the plate". | Input: Action sequence of "Put the cream cheese box in the basket front". | Input: Action sequence of "Put the bowl on top of the cabinet". |
 <br>
 
 ## 🛠️ Requirements and Installation
@@ -53,24 +62,37 @@ pip install -e .
 ```
 
 ## :earth_americas: Model Zoo
+### VLA Model (256 * 256)
 
-| Model (256 * 256)    |    HF Link        |    Success Rate (%)     |
-| :--------------------: | :------------------------------------------------------------: | :--------------------: |
-| LIBERO-Spatial       | [jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-256/tree/main) | 85.6 |
-| LIBERO-Object       | [jcenaa/WorldVLA-ActionModel-LIBERO-Object-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Object-256/tree/main) | 89.0 |
-| LIBERO-Goal | [jcenaa/WorldVLA-ActionModel-LIBERO-Goal-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Goal-256/tree/main) | 82.6 |
-| LIBERO-Long | [jcenaa/WorldVLA-ActionModel-LIBERO-10-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-10-256/tree/main) | 59.0 |
+| Model    |    HF Link        |    Continous Action SR (%)     | Discrete Action SR (%) |
+| :--------------------: | :------------------------------------------------------------: | :--------------------: | :--------------------: |
+| LIBERO-Spatial       | [jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-256/tree/main) | 99.0 | 94.2 |
+| LIBERO-Object       | [jcenaa/WorldVLA-ActionModel-LIBERO-Object-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Object-256/tree/main) | 99.8 | 96.8 |
+| LIBERO-Goal | [jcenaa/WorldVLA-ActionModel-LIBERO-Goal-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Goal-256/tree/main) | 96.4 | 94.6 |
+| LIBERO-Long | [jcenaa/WorldVLA-ActionModel-LIBERO-10-256](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-10-256/tree/main) | 94.4 | 87.6 |
 <br>
 
-| Model (512 * 512)    |    HF Link        |    Success Rate (%)     |
-| :--------------------: | :------------------------------------------------------------: | :--------------------: |
-| LIBERO-Spatial       | [jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-512](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-512/tree/main) | 87.6 |
-| LIBERO-Object       | [jcenaa/WorldVLA-ActionModel-LIBERO-Object-512](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Object-512/tree/main) | 96.2 |
-| LIBERO-Goal | [jcenaa/WorldVLA-ActionModel-LIBERO-Goal-512](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Goal-512/tree/main) | 83.4 |
-| LIBERO-Long | [jcenaa/WorldVLA-ActionModel-LIBERO-10-512](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-10-512/tree/main) | 60.0 |
+### World Model (512 * 512)
 
 
-## 🗝️ Training
+
+| *Goal* | HF Link |FVD↓ | PSNR↑ | SSIM↑ | LPIPS↓ |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| World Model | 370.0 | **22.25** | 77.84 | 19.70 |
+| [Action World Model](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Goal-512/tree/main) | **336.8** | 22.13 | **78.13** | **19.43** |
+| *Object* | HF Link | FVD↓ | PSNR↑ | SSIM↑ | LPIPS↓ |
+| World Model | 1141.6 | 20.31 | 59.59 | 27.30 |
+| [Action World Model](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Object-512/tree/main) | **877.2** | **22.18** | **65.03** | **22.60** |
+| *Spatial* | HF Link | FVD↓ | PSNR↑ | SSIM↑ | LPIPS↓ |
+| World Model | 405.4 | 22.32 | 79.15 | 20.28 |
+| [Action World Model](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-Spatial-512/tree/main) | **373.1** | **23.88** | **82.41** | **16.33** |
+| *Long* | HF Link | FVD↓ | PSNR↑ | SSIM↑ | LPIPS↓ |
+| World Model | 557.73 | 18.24 | 69.16 | 31.60 |
+| [Action World Model](https://huggingface.co/jcenaa/WorldVLA-ActionModel-LIBERO-10-512/tree/main) | **427.86** | **19.36** | **72.19** | **27.78** |
+
+
+
+## 🗝️ Training on LIBERO
 We evaluate four tasks of the LIBERO benchmark, including [spatial, obejct, goal, 10]. Here we take LIEBRO goal and 256 resolution as an example.
 
 We offer two types of training pipelines:
@@ -93,16 +115,6 @@ After filtering, you can choose between the `Pretokenize` or `NoPretokenize` tra
 
 
 ### Pipeline1: Pretokenize
-
-#### Step 0: Lerobot to HDF5
-
-We use HDF5 format data. Therefore, if you collect data in Lerobot format, you can follow the following command to process it into HDF5 format:
-```
-cd rynnvla-002/libero_util
-python lerobot_to_hdf5.py \
-    --lerobot_input_dir {lerobot_input_dir}
-    --hdf5_output_dir {hdf5_output_dir}
-```
 
 #### Step 1: Libero Data Preparation
 
@@ -232,6 +244,28 @@ bash eval_libero_goal_his_2_third_view_wrist_w_state_5_256_abiw_continous.sh
 # Libero goal, 256 resolution, discrete
 cd rynnvla-002/evals_libero
 bash eval_libero_goal_his_2_third_view_wrist_w_state_5_256_abiw_discrete.sh
+```
+
+## 🗝️ Training on LeRobot
+
+#### Step 1: Lerobot to HDF5
+
+We use HDF5 format data. Therefore, if you collect data in Lerobot format, you can follow the following command to process it into HDF5 format:
+```
+cd rynnvla-002/data_lerobot
+python lerobot_to_hdf5.py \
+    --lerobot_input_dir {lerobot_input_dir}
+    --hdf5_output_dir {hdf5_output_dir}
+```
+
+#### Step 2: HDF5 to raw data
+Put all HDF5 files in a json file, see `rynnvla-002/data_lerobot/modified_data_final.json` as an example. Extract the raw front camera data, wrist camera data, state data, and action data and save them all:
+```
+cd rynnvla-002/data_lerobot
+python extract_all_data.py \
+    --json_path {json_path}
+    --output_dir {raw_data_output_dir}
+    --num_processes {num_processes to accelerate}
 ```
 
 
