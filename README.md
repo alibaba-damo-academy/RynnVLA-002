@@ -143,6 +143,9 @@ Next, generate the conversations data for the Chameleon model. The action model 
     "../processed_data/libero_goal_image_state_action_t_256/open_the_middle_drawer_of_the_cabinet/trj_0/action/action_3.npy",
     "../processed_data/libero_goal_image_state_action_t_256/open_the_middle_drawer_of_the_cabinet/trj_0/action/action_4.npy",
     "../processed_data/libero_goal_image_state_action_t_256/open_the_middle_drawer_of_the_cabinet/trj_0/action/action_5.npy"
+  ],
+  "state": [
+    "../processed_data/libero_goal_image_state_action_t_256/open_the_middle_drawer_of_the_cabinet/trj_0/eef_gripper_state/eef_gripper_state_1.npy"
   ]
 }
 ```
