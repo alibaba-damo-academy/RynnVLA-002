@@ -15,7 +15,7 @@ RynnVLA-002: A Unified Vision-Language-Action and World Model</a></h3>
 </h5>
 
 <video controls width="100%">
-    <source src="rynnvla-002/assets/demo_multi_ann_crf_2.mp4" type="video/mp4">
+    <source src="https://github.com/alibaba-damo-academy/RynnVLA-002/raw/refs/heads/main/rynnvla-002/assets/demo_multi_ann_crf_2.mp4" type="video/mp4">
 </video>
 
 
