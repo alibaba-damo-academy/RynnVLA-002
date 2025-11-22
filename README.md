@@ -38,7 +38,7 @@ VLA model generates actions given the text instruction and image observations.
 
 |         |         |         |  
 | :-----: | :-----: | :-----: |  
-| <div align="center"><video src="https://github.com/user-attachments/assets/21c79198-d714-4a96-baff-2462a7940225" width="100" autoplay loop muted></div> | <div align="center"><video src="https://github.com/user-attachments/assets/5d42d812-b023-42a3-aff2-2d700cc1b169" width="100" autoplay loop muted></div> | <div align="center"><source src="https://github.com/user-attachments/assets/c5411f26-2b1d-46a2-8560-5c95eede467d" width="100" autoplay loop muted></div> |
+| <div align="center"><video src="https://github.com/user-attachments/assets/21c79198-d714-4a96-baff-2462a7940225" width="100" autoplay loop muted></div> | <div align="center"><video src="https://github.com/user-attachments/assets/5d42d812-b023-42a3-aff2-2d700cc1b169" width="100" autoplay loop muted></div> | <div align="center"><video src="https://github.com/user-attachments/assets/c5411f26-2b1d-46a2-8560-5c95eede467d" width="100" autoplay loop muted></div> |
 | Input: Open the middle drawer of the cabinet. | Input: Pick up the alphabet soup and place it in the basket. | Input: Pick up the black bowl between the plate and the ramekin and place it on the plate. |
 <br>
 
