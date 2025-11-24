@@ -9,8 +9,8 @@ RynnVLA-002: A Unified Vision-Language-Action and World Model</a></h3>
 
 <h5 align="center">
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2501.13106-AD1C18.svg?logo=arXiv)]() 
-[![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/collections/jcenaa/worldvla-685b9df63bdfe8cb67cc71b2)
+[![arXiv](https://img.shields.io/badge/Arxiv-2511.17502-AD1C18.svg?logo=arXiv)](https://arxiv.org/pdf/2511.17502) 
+[![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/Alibaba-DAMO-Academy/RynnVLA-002)
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](./LICENSE) 
 </h5>
 
@@ -399,7 +399,7 @@ If you find the project helpful for your research, please consider citing our pa
 <!--  may -->
 > [**RynnVLA-001: A Vision-Language-Action Model Boosted by Generative Priors**](https://github.com/alibaba-damo-academy/RynnVLA-001) <br>
 > Yuming Jiang, Siteng Huang, Shengke Xue, Yaxi Zhao, Jun Cen, Sicong Leng, Jiayan Guo, Kexiang Wang, Kehan Li, Mingxiu Chen, Fan Wang, Deli Zhao, Xin Li <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/alibaba-damo-academy/RynnVLA-001)  [![github](https://img.shields.io/github/stars/alibaba-damo-academy/RynnVLA-001.svg?style=social)](https://github.com/alibaba-damo-academy/RynnVLA-001)  [![arXiv](https://img.shields.io/badge/Arxiv-2508.14160-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.15212)<be>
+[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/alibaba-damo-academy/RynnVLA-001)  [![github](https://img.shields.io/github/stars/alibaba-damo-academy/RynnVLA-001.svg?style=social)](https://github.com/alibaba-damo-academy/RynnVLA-001)  [![arXiv](https://img.shields.io/badge/Arxiv-2509.15212-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2509.15212)<be>
 
 > [**RynnEC: Bringing MLLMs into Embodied World**](https://github.com/alibaba-damo-academy/RynnEC) <br>
 > Ronghao Dang*, Yuqian Yuan*, Yunxuan Mao*, Kehan Li*, Jiangpin Liu, Zhikai Wang, Fan Wang, Deli Zhao, Xin Li <br>
